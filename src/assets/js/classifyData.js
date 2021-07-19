@@ -1,14 +1,14 @@
 export const classifyLabels = [
   {
-    title: 'Recommend',
+    title: 'For You',
     isFocus: true
   },
   {
-    title: 'Women\'s Wear',
+    title: 'Swimwear',
     isFocus: false
   },
   {
-    title: 'Men',
+    title: 'Sneakers',
     isFocus: false
   },
   {
@@ -16,40 +16,32 @@ export const classifyLabels = [
     isFocus: false
   },
   {
-    title: 'Women\'s Shoes',
+    title: 'Shoes',
     isFocus: false
   },
   {
-    title: 'Men\'s Shoes',
+    title: 'Suits',
     isFocus: false
   },
   {
-    title: 'Leather Bags',
+    title: 'Bags',
     isFocus: false
   },
   {
-    title: 'Watch Accessories',
+    title: 'Watches',
     isFocus: false
   },
   {
-    title: 'Skin Care Makeup',
+    title: 'Luggage',
     isFocus: false
   },
   {
-    title: 'Mother and Mother',
+    title: 'Beauty',
     isFocus: false,
     isShow: false
   },
   {
-    title: 'Personal Care',
-    isFocus: false
-  },
-  {
-    title: 'Sports Outdoor',
-    isFocus: false
-  },
-  {
-    title: 'Mobile Digital',
+    title: 'Smartphones',
     isFocus: false
   }
 ]

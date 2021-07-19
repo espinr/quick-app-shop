@@ -5,9 +5,9 @@ export const goodsDatas = {
     'https://images.unsplash.com/photo-1560880550-bd38f18453cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80'
   ],
   name:'Dr.Ci:Labo',
-  title:'Dr. City of Japan personally researched the pore refinement moisturizing essence mask 32 pieces to shrink pores',
+  title:'Skin care cleansing gel',
   declare:
-    '(New and old packaging shipped randomly) Japanese original authentic authorization, 4 in one, shrink pores and tighten skin, 5min first aid for pores, clear and improve skin freshness',
+    '(New and old packaging shipped randomly) Original authentic authorization, 4 in one, shrink pores and tighten skin, 5min first aid for pores, clear and improve skin freshness',
   sizeTitle:'Specification',
   size: [
     {
@@ -46,7 +46,7 @@ export const goodsDatas = {
   },
   introduce: [
     {
-      name:'Skin care effect',
+      name:'Purpose',
       value:'Moisturizing, hydrating, removing blackheads, cleansing pores, moisturizing and moisturizing'
     },
     {
@@ -54,15 +54,15 @@ export const goodsDatas = {
       value:'Mask paper'
     },
     {
-      name:'Applicable skin type',
+      name:'Skin Type',
       value:'Normal skin, oily skin, dry skin, combination skin'
     },
     {
-      name:'Applicable object',
-      value:'male, female'
+      name:'Gender',
+      value:'All'
     },
     {
-      name:'Consumption reminder',
+      name:'Instructions',
       value:
         'The State Food and Drug Administration reminds: Please correctly understand the efficacy of cosmetics, cosmetics can not replace drugs, can not treat skin diseases.'
     },
