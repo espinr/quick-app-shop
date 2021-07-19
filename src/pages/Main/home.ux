@@ -1,5 +1,5 @@
 <template>
-  <!--List implementation. Listen to the scroll-bottom event of the list and load more data when the list scrolls to the bottom. -- >
+  <!--List implementation. Listen to the scroll-bottom event of the list and load more data when the list scrolls to the bottom. -->
   <list class="page-container" onscrollbottom="renderMoreListItem">
     <!-- List of offers -->
     <list-item
