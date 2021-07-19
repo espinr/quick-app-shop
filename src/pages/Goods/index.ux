@@ -35,7 +35,7 @@
         </list-item>
 
         <list-item class="item-price" type="goodsPrice">
-          <text class="price-text-price">¥{{ checkedSize.price }}</text>
+          <text class="price-text-price">€{{ checkedSize.price }}</text>
           <text class="price-text-oldprice">{{ checkedSize.oldPrice }}</text>
           <text class="price-text-discount">{{ checkedSize.discount }}折</text>
         </list-item>
