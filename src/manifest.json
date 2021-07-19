@@ -1,6 +1,6 @@
 {
   "package": "es.espinr.quickshop",
-  "name": "My Quick Shop",
+  "name": "My Quick App Shop",
   "versionName": "1.0.1",
   "versionCode": 1,
   "minPlatformVersion": 1070,
@@ -55,7 +55,7 @@
     "menu": true,
     "pages": {
       "pages/Main": {
-        "titleBarText": "首页",
+        "titleBarText": "Home",
         "menu": true
       },
       "pages/Goods": {

@@ -1,9 +1,9 @@
 <template>
   <div class="page-container">
     <div class="login-wrap">
-      <text class="login-text" onclick="onRegiste">注册</text>
+      <text class="login-text" onclick="onRegiste">Sign Up</text>
       <text class="login-text">|</text>
-      <text class="login-text" onclick="onSign">登录</text>
+      <text class="login-text" onclick="onSign">Sign In</text>
     </div>
 
     <div class="item-container">

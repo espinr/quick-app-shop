@@ -1,5 +1,5 @@
 /**
- * @desc 显示菜单
+ * @desc Shows the menu.
  */
 function showMenu() {
   const prompt = require('@system.prompt')
@@ -10,7 +10,7 @@ function showMenu() {
     null
   ]
   prompt.showContextMenu({
-    itemList: ['保存桌面', '分享', '关于', '取消'],
+    itemList: ['Save Homescreen', 'Share', 'About', 'Cancel'],
     success: function(ret) {
       if (itemFuncMapping[ret.index]) {
         itemFuncMapping[ret.index]()
@@ -24,7 +24,7 @@ function showMenu() {
 }
 
 /**
- * @desc 跳转至 About 页面
+ * @desc Display About page.
  */
 function jump2AboutPage() {
   const router = require('@system.router')
@@ -39,17 +39,17 @@ function jump2AboutPage() {
 }
 
 /**
- * @desc 调起第三方分享
+ * @desc Invoke third-party sharing.
  */
 function call3thPartyShare() {
   const share = require('@service.share')
 
   share.share({
     shareType: 0,
-    title: '快应用',
-    summary: '快应用是基于手机硬件平台的新型应用形态',
+    title:'Quick App',
+    Summary:'Quick App is a new concept of light apps running on the device hardware',
     imagePath: '/assets/images/logo.png',
-    targetUrl: 'https://www.quickapp.cn/',
+    targetUrl: 'https://quick-app-initiative.ow2.io/',
     platforms: ['WEIBO', 'WEIXIN', 'WEIXIN_CIRCLE'],
     success: function(data) {
       console.log(`handling success ${data}`)
@@ -62,8 +62,8 @@ function call3thPartyShare() {
 }
 
 /**
- * @desc 创建桌面图标
- * 注意：使用加载器测试`创建桌面快捷方式`功能时，请先在`系统设置`中打开`应用加载器`的`桌面快捷方式`权限
+ * @desc Create a homescreen icon.
+ * Note: When using the Loader to test the function of creating a homescreen shortcut, enable the Desktop Shortcut permission of the Application Loader in System Settings.
  */
 function createShortcut() {
   const prompt = require('@system.prompt')
@@ -72,13 +72,13 @@ function createShortcut() {
     success: function(ret) {
       if (ret) {
         prompt.showToast({
-          message: '已创建桌面图标'
+          message: 'Homescreen icon created'
         })
       } else {
         shortcut.install({
           success: function() {
             prompt.showToast({
-              message: '成功创建桌面图标'
+              message: 'Homescreen icon was successfully created.'
             })
           },
           fail: function(errmsg, errcode) {

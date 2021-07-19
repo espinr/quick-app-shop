@@ -2,7 +2,7 @@ import $fetch from '@system.fetch'
 import $util from './util'
 
 function requestHandle(params) {
-  console.log(`🤖 当前正在发起请求的 Url 是： ${params.url}`)
+  console.log(`🤖 The URL that is currently initiating the request is: ${params.url}`)
   return new Promise((resolve, reject) => {
     $fetch.fetch({
       url: params.url,

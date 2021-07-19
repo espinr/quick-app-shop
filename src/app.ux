@@ -1,10 +1,10 @@
 <script>
 /**
- * @desc: 应用级别的配置、方法，供所有页面公用；
+ * @desc: Application-level configurations and methods are shared by all pages.
  */
 import { $util, $apis } from './helper'
 
-/* @desc: 注入方法至全局 global,以便页面调用 */
+/* @desc: Inject methods to global for page invocation. */
 const hook2global = global.__proto__ || global
 hook2global.$apis = $apis
 
@@ -14,18 +14,18 @@ export default {
   createShortcut: $util.createShortcut,
   orders: [],
   onCreate() {
-    // 初始化 app 缓存的数据
+    // Initialize the data cached by the app.
     this.dataCache = {}
   },
   /**
-   * 获取 app 缓存的数据
+   * Obtains data cached by the app.
    * @param key
    */
   getAppData(key) {
     return this.dataCache[key]
   },
   /**
-   * 设置 app 缓存的数据
+   * Sets the data cached by the app.
    * @param key
    * @param val
    */

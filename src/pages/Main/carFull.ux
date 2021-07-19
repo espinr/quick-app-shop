@@ -29,8 +29,8 @@
           </div>
 
           <div class="order-price-wrap">
-            <text class="order-text-price">¥{{ $item.price }}</text>
-            <text class="order-text-oldprice">¥{{ $item.oldPrice }}</text>
+            <text class="order-text-price">€{{ $item.price }}</text>
+            <text class="order-text-oldprice">€{{ $item.oldPrice }}</text>
           </div>
         </div>
         <div class="order-end-wrap">
@@ -51,17 +51,17 @@
 
       <list-item class="item-end" type="end">
         <div class="end-line"></div>
-        <text class="end-text-amount">¥{{ totalAmount }}</text>
+        <text class="end-text-amount">€{{ totalAmount }}</text>
         <text class="end-text-promotion">{{ promotion }}</text>
       </list-item>
     </list>
 
     <div class="bottom-container">
       <text class="bottom-text">
-        <span class="bottom-span-describe">总金额</span>
-        <span class="bottom-span-amount">¥{{ totalAmount }}</span>
+        <span class="bottom-span-describe">Total</span>
+        <span class="bottom-span-amount">€{{ totalAmount }}</span>
       </text>
-      <input class="bottom-button" type="button" value="结算" />
+      <input class="bottom-button" type="button" value="Checkout" />
     </div>
   </div>
 </template>
@@ -69,10 +69,10 @@
 <script>
 export default {
   data: {
-    saveText: '你正在安全购物环境中，请放心购买',
-    title: '精选特卖',
+    saveText:'You are in a secure shopping environment. Buy with trust.',
+    title:'Selected Sale',
     totalAmount: '318',
-    promotion: '自营商品已享受新会员专享订单满38元免运费'
+    Promotion:'Self-operated products have enjoyed free shipping for new members.'
   },
   props: {
     datas: {

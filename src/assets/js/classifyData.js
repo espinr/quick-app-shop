@@ -1,55 +1,55 @@
 export const classifyLabels = [
   {
-    title: '为你推荐',
+    title: 'Recommend',
     isFocus: true
   },
   {
-    title: '女装',
+    title: 'Women\'s Wear',
     isFocus: false
   },
   {
-    title: '男装',
+    title: 'Men',
     isFocus: false
   },
   {
-    title: '男女内衣',
+    title: 'Underwear',
     isFocus: false
   },
   {
-    title: '女鞋',
+    title: 'Women\'s Shoes',
     isFocus: false
   },
   {
-    title: '男鞋',
+    title: 'Men\'s Shoes',
     isFocus: false
   },
   {
-    title: '箱包皮具',
+    title: 'Leather Bags',
     isFocus: false
   },
   {
-    title: '手表配饰',
+    title: 'Watch Accessories',
     isFocus: false
   },
   {
-    title: '护肤彩妆',
+    title: 'Skin Care Makeup',
     isFocus: false
   },
   {
-    title: '母婴',
+    title: 'Mother and Mother',
     isFocus: false,
     isShow: false
   },
   {
-    title: '个人护理',
+    title: 'Personal Care',
     isFocus: false
   },
   {
-    title: '运动户外',
+    title: 'Sports Outdoor',
     isFocus: false
   },
   {
-    title: '手机数码',
+    title: 'Mobile Digital',
     isFocus: false
   }
 ]

@@ -8,16 +8,16 @@
     <tabs onchange="changeTab" index="{{activeTab}}">
       <tab-content>
         <div class="content-container">
-          <div if="{{this.selectedTab === '首页'}}">
+          <div if="{{this.selectedTab === 'Home'}}">
             <home></home>
           </div>
-          <div if="{{this.selectedTab ==='分类'}}">
+          <div if="{{this.selectedTab ==='Categories'}}">
             <classify></classify>
           </div>
-          <div if="{{this.selectedTab === '购物车'}}">
+          <div if="{{this.selectedTab === 'Cart'}}">
             <shoppingCar is-full="{{isFull}}"></shoppingCar>
           </div>
-          <div if="{{this.selectedTab === '个人中心'}}">
+          <div if="{{this.selectedTab === 'Personal'}}">
             <personalCenter></personalCenter>
           </div>
         </div>
@@ -48,23 +48,23 @@ export default {
   private: {
     tabList: [
       {
-        title: '首页',
+        title: 'Home',
         icon: '\ue619'
       },
       {
-        title: '分类',
+        title: 'Categories',
         icon: '\ue600'
       },
       {
-        title: '购物车',
+        title: 'Cart',
         icon: '\ue655'
       },
       {
-        title: '个人中心',
+        title: 'Personal',
         icon: '\ue607'
       }
     ],
-    selectedTab: '首页',
+    selectedTab: 'Home',
     deactivedColor: '#707780',
     activedColor: ' #20a0ff',
     activeTab: 0,
@@ -82,12 +82,12 @@ export default {
     })
   },
   onShow() {
-    // 页面被切换显示时，从数据中检查是否有页面B传递来的数据
+    // When the page is switched, check whether the data transferred from page B exists in the data.
     const data = this.$app.getAppData('activeTab')
     this.isFull = !!data
     if (data) {
       this.activeTab = data
-      // 读取后需清空
+      // Clear after reading
       this.$app.setAppData('activeTab', null)
     }
   }

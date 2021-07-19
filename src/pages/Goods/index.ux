@@ -76,8 +76,8 @@
         </list-item>
 
         <list-item class="item-reputation" type="goodsReputation">
-          <text class="reputation-text-title">口碑精选</text>
-          <text class="reputation-text-subtitle">购买过该商品的用户认为</text>
+          <text class="reputation-text-title">Popular Picks</text>
+          <text class="reputation-text-subtitle">Opinion from customers who have purchased them</text>
           <div class="reputation-labels-wrap">
             <text
               class="reputation-text-label"
@@ -109,7 +109,7 @@
         </list-item>
 
         <list-item class="item-introduce" type="goodsIntroduce">
-          <text class="introduce-text-title">商品介绍</text>
+          <text class="introduce-text-title">Offer Introduction</text>
           <div class="introduce-wrap" for="{{datas.introduce}}">
             <text class="introduce-text-name">{{ $item.name }}:</text>
             <text class="introduce-text-value">{{ $item.value }}</text>
@@ -117,7 +117,7 @@
         </list-item>
 
         <list-item class="item-imagetext" type="goodsImageText">
-          <text class="imagetext-text-title">图文详情</text>
+          <text class="imagetext-text-title">Picture and text details</text>
           <image
             class="imagetext-image"
             for="{{datas.imageText}}"
@@ -163,13 +163,13 @@
           <input
             class="bottom-button-addcar"
             type="button"
-            value="加入购物车"
+            value="Add to Cart"
             @click="onClickAddCar"
           />
           <input
             class="bottom-button-buynow"
             type="button"
-            value="立即购买"
+            value="Buy Now"
             @click="onClickBuyNow"
           />
         </div>
@@ -569,7 +569,7 @@ export default {
     this.pickedCount++
   },
   onClickBuyNow() {
-    // 页面被切换隐藏时，将要传递的数据对象写入
+    // When the page is hidden by switching, the data object to be transferred is written.
     this.$app.setAppData('activeTab', 2)
     router.push({
       uri: 'pages/Main'

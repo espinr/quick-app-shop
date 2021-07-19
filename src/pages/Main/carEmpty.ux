@@ -6,11 +6,11 @@
           class="head-image"
           src="../../assets/images/shoppingcar.png"
         ></image>
-        <text class="head-text">购物车空空如也</text>
+        <text class="head-text">The shopping cart is empty</text>
       </list-item>
 
       <list-item class="item-title" type="title">
-        <text class="title-text">—— 猜你喜欢 ——</text>
+        <text class="title-text">-guess you like-</text>
       </list-item>
 
       <list-item
@@ -22,8 +22,8 @@
         <image class="favorite-image" src="{{$item.img}}"></image>
 
         <div class="favorite-price-wrap">
-          <text class="favorite-text-price">¥{{ $item.price }}</text>
-          <text class="favorite-text-oldprice">¥{{ $item.oldPrice }}</text>
+          <text class="favorite-text-price">€{{ $item.price }}</text>
+          <text class="favorite-text-oldprice">€{{ $item.oldPrice }}</text>
           <text class="favorite-text-discount">{{ $item.discount }}折</text>
         </div>
 

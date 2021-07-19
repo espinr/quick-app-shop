@@ -1,7 +1,7 @@
 {
-  "name": "quick-shop",
+  "name": "quick-app-shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quick App Sample - Shopping",
   "scripts": {
     "start": "hap server --watch",
     "server": "hap server",
@@ -45,8 +45,8 @@
     ]
   },
   "keywords": [
-    "快应用",
-    "商城"
+    "quick app",
+    "shopping"
   ],
   "browserslist": [
     "chrome 65"

@@ -1,7 +1,7 @@
 <template>
-  <!-- 列表实现，监听列表的scrollbottom事件，列表滚动到底部时加载更多数据 -->
+  <!--List implementation. Listen to the scroll-bottom event of the list and load more data when the list scrolls to the bottom. -- >
   <list class="page-container" onscrollbottom="renderMoreListItem">
-    <!-- 商品列表 -->
+    <!-- List of offers -->
     <list-item
       type="product"
       class="item-product"
@@ -17,8 +17,8 @@
 
     <list-item type="loadStatus" class="load-status">
       <progress type="circular" show="{{hasMoreData}}"></progress>
-      <text show="{{hasMoreData}}">加载更多</text>
-      <text show="{{!hasMoreData}}">没有更多了~</text>
+      <text show="{{hasMoreData}}">Load More</text>
+      <text show="{{!hasMoreData}}">No More Items</text>
     </list-item>
   </list>
 </template>
@@ -27,41 +27,41 @@
 import { homeDatas } from '../../assets/js/homeData'
 import router from '@system.router'
 
-// 模拟fetch请求数据
+// Simulate fetch request data.
 function callFetch(callback) {
   setTimeout(function() {
     callback(homeDatas)
   }, 500)
 }
 
-// 内存中存储的列表数据
+// List data stored in memory
 let memList = []
 
 export default {
   data: {
     products: [],
     hasMoreData: true,
-    // 每次渲染的商品数
+    // Number of offerings rendered each time
     size: 10,
-    // 是否正在fetch请求数据
+    // Whether the request data is being fetched.
     isLoadingData: false
   },
   onInit() {
     this.products = []
-    // 获取数据并渲染列表
+    // Get data and render the list
     this.loadAndRender()
   },
   /**
-   * 请求并渲染
+   * Request and Render
    */
   loadAndRender(doRender = true) {
     this.isLoadingData = true
-    // 重新请求数据并根据模式判断是否需要渲染列表
+    // Re-request data and determine whether to render the list based on the mode.
     callFetch(
       function(resList) {
         this.isLoadingData = false
         if (!resList) {
-          console.error(`数据请求错误`)
+          console.error(`Data request error`)
         } else if (!resList.length) {
           this.hasMoreData = false
         } else {
@@ -74,18 +74,18 @@ export default {
     )
   },
   _renderList() {
-    // 渲染列表
+    // Render List
     if (memList.length > 0) {
       const list = memList.splice(0, this.size)
       this.products = this.products.concat(list)
     }
     if (memList.length <= this.size) {
-      // 提前请求新的数据
+      // Request new data in advance
       this.loadAndRender(false)
     }
   },
   /**
-   * 滑动到底部时加载更多
+   * Load more when sliding to the bottom
    */
   renderMoreListItem() {
     if (!this.isLoadingData) {
