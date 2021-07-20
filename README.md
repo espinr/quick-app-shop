@@ -63,7 +63,7 @@ Use an Android mobile phone to download and install the [Quick App Debugger] (ht
 
 - **Common encapsulation methods**: In the `helper/utils` path, there are some common methods (e.g., for date and string manipulation) that are encapsulated separately and exposed to `global.$utils`. This offers better maintenance, facilitating use, and improving development efficiency. Of course, you can add, delete, or expand as needed.
 
-- **Simplify the process of starting development**: Use the [Concurrently](https://github.com/kimmobrunfeldt/concurrently) plug-in so you can run `npm start` to start an agile development.
+- **Simplify the process of starting development**: Use [Concurrently](https://github.com/kimmobrunfeldt/concurrently) plug-in so you can run `npm start` to start an agile development.
 
 - **Use a command script for adding a new page**: To create a new page, run the `npm run gen YourPageName` command. You can also customize the template */command/gen/template.ux* as required.
 
