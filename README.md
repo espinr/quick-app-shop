@@ -25,9 +25,11 @@
 └── package.json        # Modules and configuration information required by the project
 ```
 
-## 2. Template Description
+## 2. About This Project
 
 This project is a quick app store template.
+
+<img style="height: 500px" src="./images/ecommerce_quickapp.gif" alt="Example of quick app for ecommerce" />
 
 ## 3. How to use
 
