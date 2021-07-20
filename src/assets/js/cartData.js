@@ -1,4 +1,4 @@
-export const carDatas = [
+export const cartDatas = [
   {
     img: 'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
     Title: 'Men\'s Hooded Jacket Spring 2019 New Korean Fashion Spring Casual Hooded Workwear Coat',

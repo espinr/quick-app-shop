@@ -147,8 +147,8 @@
     <div class="bottom-container">
       <div class="bottom-line"></div>
       <div class="bottom-wrap">
-        <div class="bottom-shoppingcar-wrap">
-          <stack class="bottom-stack-shoppingcar">
+        <div class="bottom-shoppingcart-wrap">
+          <stack class="bottom-stack-shoppingcart">
             <text class='cart-icon'>{{cartIcon}}</text>
 
             <text class="bottom-text-count" show="{{pickedCount !== 0}}">{{
@@ -159,10 +159,10 @@
 
         <div class="bottom-buttons-wrap">
           <input
-            class="bottom-button-addcar"
+            class="bottom-button-addcart"
             type="button"
             value="Add to Cart"
-            @click="onClickAddCar"
+            @click="onClickAddCart"
           />
           <input
             class="bottom-button-buynow"
@@ -459,7 +459,7 @@
       flex-direction: row;
       padding: 32px;
       justify-content: space-between;
-      .bottom-shoppingcar-wrap {
+      .bottom-shoppingcart-wrap {
         width: 32%;
         border-width: 1px;
         border-radius: 6px;
@@ -468,7 +468,7 @@
         justify-content: center;
         padding-top: 8px;
         padding-bottom: 8px;
-        .bottom-stack-shoppingcar {
+        .bottom-stack-shoppingcart {
           width: 64px;
           height: 64px;
           align-items: flex-start;
@@ -495,7 +495,7 @@
       .bottom-buttons-wrap {
         flex-direction: row;
         width: 64%;
-        .bottom-button-addcar {
+        .bottom-button-addcart {
           width: 50%;
           padding-top: 8px;
           padding-bottom: 8px;
@@ -572,7 +572,7 @@ export default {
       }
     })
   },
-  onClickAddCar() {
+  onClickAddCart() {
     this.pickedCount++
   },
   onClickBuyNow() {

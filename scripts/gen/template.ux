@@ -5,7 +5,7 @@
         class="button"
         type="button"
         onclick="onBtnClick"
-        value="倾城之链"
+        value="Value chain"
       />
     </div>
   </div>

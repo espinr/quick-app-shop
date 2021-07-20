@@ -1,21 +1,21 @@
-<import name="car-empty" src="./carEmpty.ux"></import>
-<import name="car-full" src="./carFull.ux"></import>
+<import name="cart-empty" src="./cartEmpty.ux"></import>
+<import name="cart-full" src="./cartFull.ux"></import>
 
 <template>
   <div class="page-container">
-    <car-empty datas="{{favoriteDatas}}" if="{{!isFull}}"></car-empty>
-    <car-full datas="{{carDatas}}" if="{{isFull}}"></car-full>
+    <cart-empty datas="{{favoriteDatas}}" if="{{!isFull}}"></cart-empty>
+    <cart-full datas="{{cartDatas}}" if="{{isFull}}"></cart-full>
   </div>
 </template>
 
 <script>
 import { favoriteDatas } from '../../assets/js/favoriteData'
-import { carDatas } from '../../assets/js/carData'
+import { cartDatas } from '../../assets/js/cartData'
 
 export default {
   data: {
     favoriteDatas: {},
-    carDatas: {}
+    cartDatas: {}
   },
   props: {
     isFull: {
@@ -24,7 +24,7 @@ export default {
   },
   onInit() {
     this.favoriteDatas = favoriteDatas
-    this.carDatas = carDatas
+    this.cartDatas = cartDatas
   }
 }
 </script>

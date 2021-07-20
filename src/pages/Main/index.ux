@@ -1,7 +1,7 @@
 <import name="personalCenter" src="./personalCenter.ux"></import>
 <import name="home" src="./home.ux"></import>
 <import name="classify" src="./classify.ux"></import>
-<import name="shoppingCar" src="./shoppingCar.ux"></import>
+<import name="shoppingCart" src="./shoppingCart.ux"></import>
 
 <template>
   <div class="page-container">
@@ -15,7 +15,7 @@
             <classify></classify>
           </div>
           <div if="{{this.selectedTab === 'Cart'}}">
-            <shoppingCar is-full="{{isFull}}"></shoppingCar>
+            <shoppingCart is-full="{{isFull}}"></shoppingCart>
           </div>
           <div if="{{this.selectedTab === 'Personal'}}">
             <personalCenter></personalCenter>
