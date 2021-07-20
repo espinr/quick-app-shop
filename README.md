@@ -1,6 +1,12 @@
-# Quick App Store Template
+# Quick App Template: Marketplace
 
-## 1. File structure
+## 1. About This Project
+
+This project is quick app template to create a retail marketplace.
+
+<img height="500" src="./images/ecommerce_quickapp.gif" alt="Example of quick app for ecommerce" />
+
+## 2. File structure
 
 
 ```
@@ -24,12 +30,6 @@
 │   └── components      # The app components
 └── package.json        # Modules and configuration information required by the project
 ```
-
-## 2. About This Project
-
-This project is a quick app store template.
-
-<img height="500" src="./images/ecommerce_quickapp.gif" alt="Example of quick app for ecommerce" />
 
 ## 3. How to use
 
