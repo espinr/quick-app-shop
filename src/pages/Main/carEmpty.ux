@@ -2,15 +2,12 @@
   <div class="page-container">
     <list class="list-container">
       <list-item class="item-head" type="head">
-        <image
-          class="head-image"
-          src="../../assets/images/shoppingcar.png"
-        ></image>
+        <text class="head-image">{{cartIcon}}</text>
         <text class="head-text">The shopping cart is empty</text>
       </list-item>
 
       <list-item class="item-title" type="title">
-        <text class="title-text">-guess you like-</text>
+        <text class="title-text">Guess you like...</text>
       </list-item>
 
       <list-item
@@ -24,7 +21,7 @@
         <div class="favorite-price-wrap">
           <text class="favorite-text-price">€{{ $item.price }}</text>
           <text class="favorite-text-oldprice">€{{ $item.oldPrice }}</text>
-          <text class="favorite-text-discount">{{ $item.discount }}折</text>
+          <text class="favorite-text-discount">{{ $item.discount }}% off</text>
         </div>
 
         <text class="favorite-text-brief">{{ $item.brief }}</text>
@@ -37,6 +34,9 @@
 import router from '@system.router'
 
 export default {
+  data: {
+    cartIcon: '\uF07A'
+  },
   props: {
     datas: {
       default: []
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="less">
+@font-face {
+  font-family: iconfont;
+  src: url('/assets/iconfont/icons.ttf');
+}
 .page-container {
   flex-direction: column;
   width: 100%;
@@ -74,6 +78,9 @@ export default {
       .head-image {
         width: 400px;
         height: 400px;
+        color: #a9a9a9;
+        font-family: iconfont;
+        font-size: 400px;
       }
       .head-text {
         margin-top: 60px;

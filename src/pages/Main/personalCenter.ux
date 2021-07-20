@@ -8,7 +8,7 @@
 
     <div class="item-container">
       <div class="item-wrap" for="{{datas.head.iconNames}}">
-        <image class="item-image" src="{{$item.icon}}"></image>
+        <text class="item-image">{{ $item.icon }}</text>
         <text class="item-text-name">{{ $item.name }}</text>
       </div>
     </div>
@@ -17,7 +17,7 @@
       <text class="column-text-title">{{ datas.mySale.title }}</text>
       <div class="item-container">
         <div class="item-wrap" for="{{datas.mySale.iconNames}}">
-          <image class="item-image" src="{{$item.icon}}"></image>
+          <text class="item-image">{{ $item.icon }}</text>
           <text class="item-text-name">{{ $item.name }}</text>
         </div>
       </div>
@@ -27,7 +27,7 @@
       <text class="column-text-title">{{ datas.myActivities.title }}</text>
       <div class="item-container">
         <div class="item-wrap" for="{{datas.myActivities.iconNames}}">
-          <image class="item-image" src="{{$item.icon}}"></image>
+          <text class="item-image">{{ $item.icon }}</text>
           <text class="item-text-name">{{ $item.name }}</text>
         </div>
       </div>
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="less">
+@font-face {
+  font-family: iconfont;
+  src: url('/assets/iconfont/icons.ttf');
+}
 .page-container {
   background-color: #f0f0eb;
   width: 100%;
@@ -80,8 +84,10 @@ export default {
       align-items: center;
       justify-content: center;
       .item-image {
+        font-family: iconfont;
         width: 48px;
         height: 48px;
+        font-size: 48px;
         margin-bottom: 10px;
       }
       .item-text-name {

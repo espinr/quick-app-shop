@@ -37,7 +37,7 @@
         <list-item class="item-price" type="goodsPrice">
           <text class="price-text-price">€{{ checkedSize.price }}</text>
           <text class="price-text-oldprice">{{ checkedSize.oldPrice }}</text>
-          <text class="price-text-discount">{{ checkedSize.discount }}折</text>
+          <text class="price-text-discount">{{ checkedSize.discount }}% off</text>
         </list-item>
 
         <list-item class="item-title" type="goodsTitle">
@@ -76,7 +76,7 @@
         </list-item>
 
         <list-item class="item-reputation" type="goodsReputation">
-          <text class="reputation-text-title">Popular Picks</text>
+          <text class="reputation-text-title">Popular Reviews</text>
           <text class="reputation-text-subtitle">Opinion from customers who have purchased them</text>
           <div class="reputation-labels-wrap">
             <text
@@ -109,7 +109,7 @@
         </list-item>
 
         <list-item class="item-introduce" type="goodsIntroduce">
-          <text class="introduce-text-title">Offer Introduction</text>
+          <text class="introduce-text-title">Details</text>
           <div class="introduce-wrap" for="{{datas.introduce}}">
             <text class="introduce-text-name">{{ $item.name }}:</text>
             <text class="introduce-text-value">{{ $item.value }}</text>
@@ -117,7 +117,7 @@
         </list-item>
 
         <list-item class="item-imagetext" type="goodsImageText">
-          <text class="imagetext-text-title">Picture and text details</text>
+          <text class="imagetext-text-title">Other Pictures</text>
           <image
             class="imagetext-image"
             for="{{datas.imageText}}"
@@ -149,10 +149,8 @@
       <div class="bottom-wrap">
         <div class="bottom-shoppingcar-wrap">
           <stack class="bottom-stack-shoppingcar">
-            <image
-              class="bottom-image-shoppingcar"
-              src="../../assets/images/car_small.png"
-            ></image>
+            <text class='cart-icon'>{{cartIcon}}</text>
+
             <text class="bottom-text-count" show="{{pickedCount !== 0}}">{{
               pickedCount
             }}</text>
@@ -179,6 +177,11 @@
 </template>
 
 <style lang="less">
+@font-face {
+  font-family: iconfont;
+  src: url('/assets/iconfont/icons.ttf');
+}
+
 .page-container {
   flex-direction: column;
   width: 100%;
@@ -470,10 +473,13 @@
           height: 64px;
           align-items: flex-start;
           justify-content: flex-end;
-          .bottom-image-shoppingcar {
+          .cart-icon {
+            font-family: iconfont;
             width: 100%;
             height: 100%;
-            padding: 8px;
+            font-size: 200%;
+            line-height: 100%;
+            text-align: center;
           }
           .bottom-text-count {
             width: 32px;
@@ -522,6 +528,7 @@ import { goodsDatas } from '../../assets/js/goodsData'
 export default {
   private: {
     isTop: true,
+    cartIcon: '\uf07a',
     datas: goodsDatas,
     autoPlay: false,
     sliderValue: 1000,

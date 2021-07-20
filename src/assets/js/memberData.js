@@ -3,20 +3,20 @@ export const memberDatas = {
     title:'',
     iconNames: [
       {
-        icon:'../../assets/images/paying.png',
-        name:'Pending payment'
+        icon:'\uf09d',
+        name:'Pending Payment'
       },
       {
-        icon:'../../assets/images/receiving.png',
-        name:'To be received'
+        icon:'\uf0d1',
+        name:'Delivered'
       },
       {
-        icon:'../../assets/images/after_sales.png',
+        icon:'\uf0d6',
         name:'Return/Exchanges'
       },
       {
-        icon:'../../assets/images/all_orders.png',
-        name:'All orders'
+        icon:'\uf0cb',
+        name:'All Orders'
       }
     ]
   },
@@ -24,20 +24,20 @@ export const memberDatas = {
     title:'My Special Sale',
     iconNames: [
       {
-        icon:'../../assets/images/goods_collection.png',
-        name:'product collection'
+        icon:'\uf00a',
+        name:'Products'
       },
       {
-        icon:'../../assets/images/brand_collection.png',
+        icon:'\uf02c',
         name:'Brand Collection'
       },
       {
-        icon:'../../assets/images/store_collection.png',
+        icon:'\uf1ad',
         name:'Store Collection'
       },
       {
-        icon:'../../assets/images/footprint.png',
-        name:'My footprint'
+        icon:'\uf0ca',
+        name:'My Activity'
       }
     ]
   },
@@ -45,19 +45,19 @@ export const memberDatas = {
     title:'My Activity',
     iconNames: [
       {
-        icon:'../../assets/images/quality_goods.png',
-        name: 'Quality items'
+        icon:'\uf0a3',
+        name: 'Quality Items'
       },
       {
-        icon:'../../assets/images/limit_buying.png',
-        name:'Reduced prizes for a limited time'
+        icon:'\uf0e7',
+        name:'Flash Sales'
       },
       {
-        icon:'../../assets/images/recent_buying.png',
+        icon:'\uf06b',
         name:'Recently buyed'
       },
       {
-        icon:'../../assets/images/certainly_orders.png',
+        icon:'\uf004',
         name:'Wish list'
       }
     ]

@@ -1,6 +1,6 @@
 export const classifyDatas = [
   {
-    title: 'Guess you want to find',
+    title: 'Guess you want to find...',
     list: [
       {
         img:
@@ -10,7 +10,7 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Men\'s Down Coat'
+        name: 'Ellegant Coat'
       },
       {
         img:
@@ -25,7 +25,7 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Jierou'
+        name: 'Hat'
       },
       {
         img:
@@ -35,17 +35,17 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Men Warm'
+        name: 'Cool Shoes'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        Name: 'Induction Cooker/Electric Rice Cooker'
+        Name: 'Cooking Set'
       }
     ]
   },
   {
-    title: 'You might also like',
+    title: 'You might also like...',
     list: [
       {
         img:
@@ -60,7 +60,7 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Men\'s Business Shoes'
+        name: 'Men\'s Leather Shoes'
       },
       {
         img:
@@ -75,47 +75,47 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Shirt'
+        name: 'Shirts'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        Name: 'Cotton Slipper'
+        name: 'Underwear'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'All Cotton Kit'
+        name: 'Shorts'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Coiled'
+        name: 'Grooming Set'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Paper Diaper'
+        name: 'Tie Set'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'pregnant mother'
+        name: 'Bag'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'pregnant beauty'
+        name: 'T-shirt'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Sweaters'
+        name: 'Sweater'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'dress'
+        name: 'Wallet'
       },
       {
         img:
@@ -125,17 +125,17 @@ export const classifyDatas = [
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Cleanse/Remup Remover'
+        name: 'Hair Treatment'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'lipstick'
+        name: 'Lipstick'
       },
       {
         img:
         'https://images.unsplash.com/photo-1542296774331-3056678c88ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
-        name: 'Terner'
+        name: 'Sports Cap'
       }
     ]
   }

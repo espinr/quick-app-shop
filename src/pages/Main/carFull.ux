@@ -7,7 +7,7 @@
   <div class="page-container">
     <list class="list-container">
       <list-item class="item-head" type="head">
-        <image class="head-image" src="../../assets/images/save.png"></image>
+        <text class="head-icon">{{ secureIcon }}</text>
         <text class="head-text">{{ saveText }}</text>
       </list-item>
 
@@ -69,10 +69,11 @@
 <script>
 export default {
   data: {
-    saveText:'You are in a secure shopping environment. Buy with trust.',
-    title:'Selected Sale',
+    saveText:'You are in a secure shopping environment',
+    title:'Current items in your cart',
     totalAmount: '318',
-    Promotion:'Self-operated products have enjoyed free shipping for new members.'
+    promotion:'Self-operated products have enjoyed free shipping for new members.',
+    secureIcon: '\uf14a'
   },
   props: {
     datas: {
@@ -83,6 +84,10 @@ export default {
 </script>
 
 <style lang="less">
+@font-face {
+  font-family: iconfont;
+  src: url('/assets/iconfont/icons.ttf');
+}
 .page-container {
   flex-direction: column;
   width: 100%;
@@ -101,11 +106,14 @@ export default {
       padding-top: 16px;
       padding-bottom: 16px;
       width: 100%;
-      .head-image {
+      .head-icon {
         width: 40px;
         height: 40px;
         margin-left: 16px;
         margin-right: 16px;
+        font-family: iconfont;
+        font-size: 40px;
+        color: #008000;
       }
       .head-text {
         font-size: 30px;

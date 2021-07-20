@@ -49,19 +49,19 @@ export default {
     tabList: [
       {
         title: 'Home',
-        icon: '\ue619'
+        icon: '\uf015'
       },
       {
         title: 'Categories',
-        icon: '\ue600'
+        icon: '\uf0ca'
       },
       {
         title: 'Cart',
-        icon: '\ue655'
+        icon: '\uf07a'
       },
       {
         title: 'Personal',
-        icon: '\ue607'
+        icon: '\uf007'
       }
     ],
     selectedTab: 'Home',
@@ -102,7 +102,7 @@ text {
 
 @font-face {
   font-family: iconfont;
-  src: url('/assets/iconfont/iconfont.ttf');
+  src: url('/assets/iconfont/icons.ttf');
 }
 .iconfont {
   font-family: iconfont;
