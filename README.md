@@ -78,7 +78,7 @@ Use an Android mobile phone to download and install the [Quick App Debugger] (ht
 ## 5. Built-in commands
 
 | Command | Description |
-| --- | --- | --- |
+| --- | --- | 
 | `npm start` | Start services (server) and monitoring (watch) |
 | `npm run server`| Enable the service (server) | 
 | `npm run watch` | Enable monitoring (watch) | 
