@@ -63,15 +63,15 @@ Use an Android mobile phone to download and install the [Quick App Debugger] (ht
 
 - **Simplify the process of starting development**: Use the [Concurrently](https://github.com/kimmobrunfeldt/concurrently) plug-in so you can run `npm start` to start an agile development.
 
-- **Use a command script for adding a new page**; To create a new page, run the `npm gen YourPageName` command. You can also customize the template */command/gen/template.ux* as required.
+- **Use a command script for adding a new page**: To create a new page, run the `npm run gen YourPageName` command. You can also customize the template */command/gen/template.ux* as required.
 
-- **Integrates [Prettier](https://prettier.io/) & [Eslint](https://eslint.org/)**. Unify team code specifications and styles (such as `js`, `less`, and `css`) while detecting potential problems in code to promote high-quality code writing and improve work efficiency (especially for team development).
+- **Integrates [Prettier](https://prettier.io/) & [Eslint](https://eslint.org/)**: Unify team code specifications and styles (such as `js`, `less`, and `css`) while detecting potential problems in code to promote high-quality code writing and improve work efficiency (especially for team development).
 
 - **New file listening command**: The [onchange](https://github.com/Qard/onchange) dependency is introduced to monitor file changes. During development, you can run the `npm run prettier-watch` command to format the modified `*.ux` and `*.js` files, which greatly improves the compilation efficiency.
 
-- **Optimize local development port settings**; The default port of Quick App is 12306. You can customize the port, but the user experience is not user-friendly. Optimize the usage of the local development address port by referring to the `creat-react-app` setting. If the specified port (default port: '8080') is occupied, the system searches for a new available port (for example, 8081/8082/...) in ascending order.
+- **Optimize local development port settings**: The default port of Quick App is 12306. You can customize the port, but the user experience is not user-friendly. Optimize the usage of the local development address port by referring to the `creat-react-app` setting. If the specified port (default port: '8080') is occupied, the system searches for a new available port (for example, 8081/8082/...) in ascending order.
 
-- **QR code for opening the debugging home page**; Run the `npm start` command to start the HTTP debugging server and display the address on the command line terminal. Use the quick app debugger on your mobile phone to scan the code to download and run the rpk package. When the terminal accumulates more information streams, it is inconvenient to scan the code. Therefore, a QR code is added to open the debugging home page in the browser. To disable this function, set `autoOpenBrowser` to `false` in the `command/server.js` file.
+- **QR code for opening the debugging home page**: Run the `npm start` command to start the HTTP debugging server and display the address on the command line terminal. Use the quick app debugger on your mobile phone to scan the code to download and run the rpk package. When the terminal accumulates more information streams, it is inconvenient to scan the code. Therefore, a QR code is added to open the debugging home page in the browser. To disable this function, set `autoOpenBrowser` to `false` in the `command/server.js` file.
 
 ## 5. Built-in commands
 

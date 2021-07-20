@@ -46,6 +46,9 @@
       },
       "pages/Goods": {
         "component": "index"
+      },
+      "pages/Hello": {
+        "component": "index"
       }
     }
   },

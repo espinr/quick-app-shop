@@ -5,7 +5,7 @@
   "scripts": {
     "start": "hap server --watch",
     "server": "hap server",
-    "gen": "node ./script/gen/index.js",
+    "gen": "node ./scripts/gen/index.js",
     "build": "hap build",
     "release": "hap release",
     "watch": "hap watch",
@@ -15,7 +15,10 @@
     "prettier-watch": "onchange '**/*.md' \"src/**/**/*.{js,ux,less,scss,css}\" -- prettier --write {{changed}}"
   },
   "dependencies": {
-    "apex-ui": "latest"
+    "apex-ui": "latest",
+    "colors": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/quickapp": "github:vivoquickapp/quickapp-types",

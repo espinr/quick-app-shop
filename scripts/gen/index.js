@@ -67,7 +67,7 @@ function main() {
   const folderNameReg = /^[A-Z][[A-Za-z0-9]+$/
   if (!folderNameReg.test(newFolderName)) {
     return console.warn(
-      `⚠️  Please enter the standard Folder name. Eg: XyzAbcde.`.underline.red
+      `⚠️  Please enter the standard Folder name (PascalCase). Eg: MyPage.`.underline.red
     )
   }
 

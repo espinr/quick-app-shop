@@ -5,7 +5,7 @@
         class="button"
         type="button"
         onclick="onBtnClick"
-        value="Value chain"
+        value="My Button"
       />
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
   /* -------------------SelfCustomEvent------------------ */
   onBtnClick() {
     $utils.route2theUrl(
-      'https://nicelinks.site/explore/all?utm_source=quickapp'
+      'https://quick-app-initiative.ow2.io/'
     )
   }
 }
