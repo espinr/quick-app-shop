@@ -43,7 +43,7 @@ cd quick-app-shop
 npm start #Recommendation
 
 # Or run the following command:
-npm server & yarn watch
+npm server & npm watch
 
 # Or run the following command on one terminal tab:
 npm server
