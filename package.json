@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Quick App Sample - Shopping",
   "scripts": {
+    "build": "hap build",
     "start": "hap server --watch",
     "server": "hap server",
     "gen": "node ./scripts/gen/index.js",
-    "build": "hap build",
     "release": "hap release",
     "watch": "hap watch",
     "debug": "hap debug",
@@ -17,18 +17,22 @@
   "dependencies": {
     "apex-ui": "latest",
     "colors": "^1.4.0",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/quickapp": "github:vivoquickapp/quickapp-types",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-hybrid": "0.0.5",
+    "hap-toolkit": "^1.9.0",
     "husky": "^4.3.0",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "lint-staged": "^10.5.1",
+    "less": "^3.13.1",
+    "less-loader": "^7.3.0",
+    "lint-staged": "^10.4.0",
     "onchange": "^5.2.0",
-    "prettier": "^1.15.3",
-    "prettier-plugin-ux": "^0.3.0"
+    "prettier": "^2.1.2",
+    "prettier-plugin-quickapp": "^0.1.0"
   },
   "prettier": {
     "singleQuote": true,
