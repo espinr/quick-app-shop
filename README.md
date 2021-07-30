@@ -44,6 +44,8 @@ You are advised to download the Quick Application Development Tool (https://www.
 ### 3.2 Command Line Debugging
 ```bash
 cd quick-app-shop
+npm install
+
 npm start #Recommendation
 
 # Or run the following command:
