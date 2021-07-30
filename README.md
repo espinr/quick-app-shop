@@ -6,6 +6,10 @@ This project is a quick app template to create a retail marketplace.
 
 <img height="500" src="./images/ecommerce_quickapp.gif" alt="Example of quick app for ecommerce" />
 
+Check how it would look like on your browser (a preview):
+
+<img height="300" src="./images/qrcode.png" alt="QR Code to the running example" />
+
 ## 2. File structure
 
 
