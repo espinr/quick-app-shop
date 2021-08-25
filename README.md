@@ -14,6 +14,8 @@ Check how it would look like on your browser (a preview):
 
 
 ```
+├── build               # Result of the compiling process 
+├── dist                # Example of the final package produced (RPK).
 ├── sign                # Stores the RPK package signature module.
 │   ├── debug           # Debugging environment certificate/private key file
 │   └── release         # Stable environment certificate/private key file
