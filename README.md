@@ -6,9 +6,10 @@ This project is a quick app template to create a retail marketplace.
 
 <img height="500" src="./images/ecommerce_quickapp.gif" alt="Example of quick app for ecommerce" />
 
+<!--
 Check how it would look like on your browser (a preview):
-
 <img height="300" src="./images/qrcode.png" alt="QR Code to the running example" />
+-->
 
 ## 2. File structure
 
@@ -94,3 +95,6 @@ Use an Android mobile phone to download and install the [Quick App Debugger] (ht
 | `npm run release`| Generate the `rpk` package and sign it |
 
 
+## 6. Acknowledgments
+
+- [Shopping Cart icon](https://thenounproject.com/search/?q=cart&i=4292928) by Adrian Adam from the Noun Project.
